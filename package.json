@@ -1,0 +1,32 @@
+{
+    "name": "normall",
+    "version": "0.0.0",
+    "description": "Normalize ALL things! Useful normalization functions",
+    "main": "index.js",
+    "scripts": {
+        "test": "export TESTING=true; mocha --reporter list\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GitbookIO/normall.git"
+    },
+    "keywords": [
+        "normalize",
+        "filename",
+        "username",
+        "text",
+        "normalization"
+    ],
+    "author": "Aaron O'Mullan <aaron.omullan@friendco.de>",
+    "license": "Apache 2",
+    "bugs": {
+        "url": "https://github.com/GitbookIO/normall/issues"
+    },
+    "homepage": "https://github.com/GitbookIO/normall",
+    "dependencies": {
+        "latenize": "0.2.0"
+    },
+    "devDependencies": {
+        "mocha": "1.18.2"
+    }
+}
