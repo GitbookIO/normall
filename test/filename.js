@@ -1,0 +1,18 @@
+var assert = require('assert');
+
+var filename = require('../').filename;
+
+
+describe('Filename normalization', function() {
+    it('should normalize spaces', function() {
+        assert.equal(filename('1 2 3'), '1_2_3');
+    });
+
+    it('should ignore trailing spaces', function() {
+        assert.equal(filename('a b c '), 'a_b_c');
+    });
+
+    it('should remove illegal chars', function() {
+        assert.equal(filename('ABC 38 ./.#$#@!/'), 'ABC38');
+    });
+});
