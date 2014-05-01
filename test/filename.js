@@ -20,4 +20,8 @@ describe('Filename normalization', function() {
         assert.equal(filename('a.b.c'), 'abc');
     });
 
+    it('should convert to lowecase', function() {
+        assert.equal(filename('AbC DeF gHi'), 'abc_def_ghi');
+    });
+
 });
