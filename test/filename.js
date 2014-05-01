@@ -13,6 +13,6 @@ describe('Filename normalization', function() {
     });
 
     it('should remove illegal chars', function() {
-        assert.equal(filename('ABC 38 ./.#$#@!/'), 'ABC38');
+        assert.equal(filename('ABC 38 ./.#$#@!/'), 'ABC_38');
     });
 });
