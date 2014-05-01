@@ -1,4 +1,4 @@
-Normall - Normalize all things !
+NormALL - Normalize all things !
 =======
 
 JS library to normalize `filenames`, `usernames`, ...
