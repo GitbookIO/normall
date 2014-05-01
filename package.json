@@ -4,7 +4,7 @@
     "description": "Normalize ALL things! Useful normalization functions",
     "main": "index.js",
     "scripts": {
-        "test": "export TESTING=true; mocha --reporter list\""
+        "test": "export TESTING=true; mocha --reporter list"
     },
     "repository": {
         "type": "git",
