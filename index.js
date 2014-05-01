@@ -17,7 +17,8 @@ function filename(str) {
     return base(str)
     .replace(/[\/\\\?\%\*\:\;\|\"\'\\<\\>\#\$\(\)\!\.\@]/g, '')
     .trim()
-    .replace(/ /g, '_');
+    .replace(/ /g, '_')
+    .toLowerCase();
 }
 
 // Normalize name
