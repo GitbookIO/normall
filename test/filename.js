@@ -15,4 +15,9 @@ describe('Filename normalization', function() {
     it('should remove illegal chars', function() {
         assert.equal(filename('ABC 38 ./.#$#@!/'), 'ABC_38');
     });
+
+    it('should strip dots', function() {
+        assert.equal(filename('a.b.c'), 'abc');
+    });
+
 });
