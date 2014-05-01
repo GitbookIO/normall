@@ -30,3 +30,6 @@ module.exports = base;
 module.exports.ascii = ascii;
 module.exports.name = name  ;
 module.exports.filename = filename;
+
+module.exports.latenize = latenize;
+module.exports.accents = latenize;
