@@ -31,6 +31,6 @@ Converts all non latin characters to latin characters. Strips accents, ...
 Alias to `normall.latenize`
 
 
-### normall.name(str)
+### normall.username(str)
 
 Normalizes `str` to be used as a username (strips accents, ...)
