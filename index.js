@@ -22,14 +22,14 @@ function filename(str) {
 }
 
 // Normalize name
-function name(str) {
-    return base(str);
+function username(str) {
+    return base(str).replace(/\s+/g, '');
 }
 
 // Exports
 module.exports = base;
 module.exports.ascii = ascii;
-module.exports.name = name  ;
+module.exports.username = username;
 module.exports.filename = filename;
 
 module.exports.latenize = latenize;
