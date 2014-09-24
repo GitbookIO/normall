@@ -1,6 +1,6 @@
 {
     "name": "normall",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Normalize ALL things! Useful normalization functions",
     "main": "index.js",
     "scripts": {
