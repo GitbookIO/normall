@@ -24,7 +24,8 @@
     },
     "homepage": "https://github.com/GitbookIO/normall",
     "dependencies": {
-        "latenize": "0.2.0"
+        "latenize": "0.2.0",
+        "han": "0.0.7"
     },
     "devDependencies": {
         "mocha": "1.18.2"
