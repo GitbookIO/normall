@@ -15,6 +15,8 @@ describe('Pinyin normalization', function() {
     });
 
     it('should handle chinese names', function() {
+        assert.equal(pinyin('王秀英'), 'wang xiu ying');
 
+        assert.equal(pinyin('姓名'), 'xing ming');
     });
 });

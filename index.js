@@ -15,7 +15,19 @@ function similar(s1, s2) {
 function correct(str, out, sep) {
     return out.split('').reduce(function(accu, x, i) {
         var o = str.charAt(accu.length);
-        return similar(o, x) ? accu + o : accu;
+        var p = str.charAt(accu.length-1);
+        return (
+            // Matches input
+            similar(o, x) ?
+            accu + o :
+            // Does not match input
+            ( (x != sep || p != accu[accu.length-1])?
+                // If not a "sep" or a "sep" and previous chars differ
+                accu + x :
+                // Bad sep
+                accu
+            )
+        );
     }, '');
 }
 
