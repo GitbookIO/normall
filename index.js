@@ -58,7 +58,9 @@ function stripSpecial(str) {
 
 // Normalize name
 function username(str) {
-    return base(str).replace(/\s+/g, '');
+    return base(str)
+    .replace(/\s+/g, '')
+    .toLowerCase();
 }
 
 // Exports
