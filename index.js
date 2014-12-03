@@ -39,17 +39,21 @@ function ascii(str) {
 // Basic normalization = latenize + ascii
 // Common and basic
 function base(str) {
-    return ascii(latenize(pinyin(str))).trim();
+    return stripSpecial(ascii(latenize(pinyin(str))).trim());
 }
 
 // Normalize str to be used as a filename
 // Strip illegal chars found in http://en.wikipedia.org/wiki/Filename#Reserved%5Fcharacters%5Fand%5Fwords
 function filename(str) {
     return base(str)
-    .replace(/[\/\\\?\%\*\:\;\|\"\'\\<\\>\#\$\(\)\!\.\@]/g, '')
     .trim()
     .replace(/ /g, '_')
     .toLowerCase();
+}
+
+// Strips special characters
+function stripSpecial(str) {
+    return str.replace(/[\/\\\?\%\*\:\;\|\"\'\\<\\>\#\$\(\)\!\.\@]/g, '');
 }
 
 // Normalize name
