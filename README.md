@@ -4,14 +4,14 @@ NormALL - Normalize all things !
 JS library to normalize `filenames`, `usernames`, ...
 
 
-### normall(str)
+### normall(str) or normall.base(str)
 
-Apply basic normalization: `latenize` then strip `ascii` then `trim`
+Apply basic normalization: Convert Chinese characters to Pinyin, then `latenize` to remove non-Latin characters then strip non- `ASCII` characters then `trim` leading and trailing whitespace.
 
 
 ### normall.filename(str)
 
-Normalize `str` for use in filename: `base` then strip `illegal filename chars` then `" " => "_"`
+Normalize `str` for use in filename: First apply`base` function above then strip `illegal filename chars` then `" " => "_"`. Finally, convert the string to lowercase.
 
 :Warning: This does not expect extensions, and normalizes the "name" part of the filename
 
